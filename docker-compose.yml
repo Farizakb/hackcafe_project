@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  chaos-nexus:
+    build: .
+    container_name: chaos_nexus
+    ports:
+      - "8080:8080" # Central SRE Glassmorphic Dashboard
+      - "8000:8000" # Target FastAPI Application
+      - "8001:8001" # Chaos Saboteur Agent
+    volumes:
+      - .:/app
+    # Read GEMINI_API_KEY from host or local .env file
+    env_file:
+      - .env
+    restart: unless-stopped
