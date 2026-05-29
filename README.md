@@ -1,5 +1,10 @@
 # 🎯 Chaos Nexus - Autonomous Multi-Agent Self-Healing System
 
+
+### ⚠️ Not fully completed and deployed to cloud ⚠️
+
+
+
 ## Project Overview
 
 **Chaos Nexus** is an interactive, gamified self-healing system that demonstrates advanced Agentic AI capabilities. It features:
